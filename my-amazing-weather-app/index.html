@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Weather</title>
+<link rel="stylesheet" href="src/styles.css">
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    
+        <script
+            src="https://kit.fontawesome.com/3bbc2dc04b.js"
+            crossorigin="anonymous"
+        ></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="Enter-details">
+      <div class="card">
+  <div class="card-header">
+    
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Tell me the weather in...</h5>
+   
+  </div>
+
+        <div class="mb-3">
+                <form id = "search-form">
+<input
+            type="search"
+            class="form-control"
+						placeholder="Enter a city"
+						autofocus="on"
+						autocomplete="off"
+            id="city-search"
+            />
+
+          
+         <button type="submit" class="btn btn-primary btn-lg" id = "button-lets-go" >Let's Go!</button>
+
+         <button type="button" class="btn btn-success" id = "current-location">Current Location</button>
+
+        
+
+        </div>
+      </form>
+
+         <br>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >remember this location</label
+          >
+
+        </div>
+                </div>
+
+    
+      </div>
+      <br>
+  
+				<div class ="main" 
+				id = "main-card">
+<h2 class = "today"> </h2>
+        <h1 id = "main-city"> </h1>
+          <div class = "row">       
+          <h1 id = "degrees"> 
+            <span id= "temperature"> X </span>
+                    <a href = "#" id = "celsius-link"> <small> °C  </small></a>  |
+                    <a href = "#" id = "fahrenheit-link"> <small>°F</small> </a>
+                 </div>
+                </h1>
+            </span>
+          <h3 id="description">How is it</h3> 
+
+        </div>
+
+        <br>
+        
+  <div class="row">
+    <div class="col">
+      <div class="forecast1">
+  Monday
+  <h5>28° C</h5>
+    </div>
+    </div>
+    <div class="col">
+            <div class="forecast2">
+
+      Tuesday
+        <h5>28° C</h5>
+
+    </div>
+    </div>
+    <div class="col">
+            <div class="forecast3">
+
+Wednesday  
+  <h5>29° C</h5>
+  </div>
+  </div>
+  <div class="col">
+            <div class="forecast4">
+
+Thursday
+  <h5>30° C</h5>
+    </div>
+  </div>
+<div class="col">
+            <div class="forecast5">
+
+Friday
+  <h5>29° C</h5>
+    </div>
+  </div>
+
+  </div>
+</div>
+<br>
+<br>
+<div class="Quote-Card">
+<div class="card">
+  <div class="card-body">
+"Quote of the day..."  </div>
+</div>
+</div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
